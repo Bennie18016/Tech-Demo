@@ -7,9 +7,9 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     //Creating important variables. Serialize field lets private values be shown in the inspector
-    float speed = 6f;
-    [SerializeField] Camera playerCamera;
-    float sprint = 8.5f;
+    float speed = 5f;
+    [SerializeField] private Camera playerCamera;
+    float sprint = 10f;
     float jumpHeight = 8.0f;
     float sensitivity = 2.0f;
     float gravity = 20.0f;
@@ -81,3 +81,4 @@ public class Movement : MonoBehaviour
         transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * sensitivity, 0);
     }
 }
+
