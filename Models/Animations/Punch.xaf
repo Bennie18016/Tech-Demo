@@ -1,0 +1,146 @@
+<MaxAnimation version="1.00" date="Mon Feb 14 22:32:04 2022">
+    <SceneInfo fileName="Human.max" startTick="0" endTick="3200" frameRate="30" ticksPerFrame="160" />
+    <CustomData />
+    <Node name="Bone011(mirrored)" parentNode="Bone010(mirrored)" parentNodeIndex="0" distanceToParent="58.486492" numChildren="1">
+        <Samples count="21">
+            <S t="0" v="0.540898 -0.841008 0.011648 0.003712 0.016235 0.999861 -0.841080 -0.540780 0.011903 -76.306168 7.915806 329.009644" />
+            <S t="160" v="0.545308 -0.838155 0.011629 0.003626 0.016231 0.999862 -0.838228 -0.545190 0.011891 -76.104584 7.684032 329.008759" />
+            <S t="320" v="0.557635 -0.830006 0.011575 0.003387 0.016219 0.999863 -0.830079 -0.557519 0.011855 -75.530815 7.037525 329.006256" />
+            <S t="480" v="0.576446 -0.817055 0.011493 0.003016 0.016192 0.999864 -0.817130 -0.576333 0.011798 -74.625458 6.055252 329.002289" />
+            <S t="640" v="0.600244 -0.799736 0.011389 0.002540 0.016145 0.999866 -0.799813 -0.600135 0.011723 -73.426003 4.820278 328.997040" />
+            <S t="800" v="0.627524 -0.778516 0.011270 0.001984 0.016073 0.999869 -0.778594 -0.627420 0.011630 -71.971848 3.415905 328.990692" />
+            <S t="960" v="0.656822 -0.753963 0.011142 0.001371 0.015970 0.999872 -0.754045 -0.656722 0.011523 -70.308090 1.922234 328.983429" />
+            <S t="1120" v="0.686759 -0.726801 0.011011 0.000728 0.015836 0.999874 -0.726885 -0.686665 0.011404 -68.487930 0.413074 328.975494" />
+            <S t="1280" v="0.716086 -0.697927 0.010883 0.000079 0.015673 0.999877 -0.698012 -0.715997 0.011278 -66.573654 -1.046574 328.967133" />
+            <S t="1440" v="0.743710 -0.668415 0.010762 -0.000551 0.015486 0.999880 -0.668502 -0.743627 0.011149 -64.636551 -2.402363 328.958679" />
+            <S t="1600" v="0.768715 -0.639503 0.010653 -0.001139 0.015287 0.999883 -0.639591 -0.768637 0.011023 -62.755779 -3.611408 328.950439" />
+            <S t="1760" v="0.790357 -0.612556 0.010558 -0.001664 0.015088 0.999885 -0.612645 -0.790283 0.010905 -61.016602 -4.641983 328.942841" />
+            <S t="1920" v="0.808043 -0.589030 0.010481 -0.002105 0.014904 0.999887 -0.589119 -0.807974 0.010803 -59.508190 -5.471771 328.936279" />
+            <S t="2080" v="0.821285 -0.570423 0.010423 -0.002444 0.014752 0.999888 -0.570513 -0.821219 0.010721 -58.321327 -6.084831 328.931091" />
+            <S t="2240" v="0.829626 -0.558223 0.010387 -0.002661 0.014650 0.999889 -0.558313 -0.829562 0.010668 -57.546009 -6.467018 328.927704" />
+            <S t="2400" v="0.832546 -0.553858 0.010374 -0.002738 0.014613 0.999890 -0.553949 -0.832483 0.010649 -57.269135 -6.600060 328.926483" />
+            <S t="2560" v="0.808517 -0.588380 0.010479 -0.002117 0.014898 0.999887 -0.588469 -0.808448 0.010800 -59.466618 -5.493828 328.936096" />
+            <S t="2720" v="0.745528 -0.666388 0.010754 -0.000593 0.015473 0.999880 -0.666474 -0.745445 0.011140 -64.504105 -2.490860 328.958099" />
+            <S t="2880" v="0.660594 -0.750661 0.011125 0.001291 0.015955 0.999872 -0.750742 -0.660495 0.011509 -70.085701 1.731091 328.982452" />
+            <S t="3040" v="0.582097 -0.813039 0.011468 0.002904 0.016182 0.999865 -0.813115 -0.581985 0.011781 -74.346252 5.761230 329.001068" />
+            <S t="3200" v="0.547389 -0.836798 0.011620 0.003586 0.016230 0.999862 -0.836871 -0.547272 0.011885 -76.008759 7.574726 329.008331" />
+        </Samples>
+        <Controller name="Bone011(mirrored) \ Transform" classOf="Position/Rotation/Scale" classID="2005,0" superClassID="9008" subNum="2" numChildren="3" filterType="transform" outOfRangeBefore="constant" outOfRangeAfter="constant">
+            <Samples count="21">
+                <MVal t="0" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234756 0.008118 12.035397 " />
+                <MVal t="160" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234764 0.008118 12.035400 " />
+                <MVal t="320" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234772 0.008118 12.035400 " />
+                <MVal t="480" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234760 0.008118 12.035389 " />
+                <MVal t="640" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234764 0.008118 12.035400 " />
+                <MVal t="800" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234772 0.008118 12.035404 " />
+                <MVal t="960" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234749 0.008087 12.035400 " />
+                <MVal t="1120" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234756 0.008148 12.035397 " />
+                <MVal t="1280" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234764 0.008118 12.035404 " />
+                <MVal t="1440" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234764 0.008148 12.035400 " />
+                <MVal t="1600" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234764 0.008087 12.035404 " />
+                <MVal t="1760" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234764 0.008087 12.035400 " />
+                <MVal t="1920" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234760 0.008118 12.035400 " />
+                <MVal t="2080" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234768 0.008118 12.035400 " />
+                <MVal t="2240" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234768 0.008118 12.035400 " />
+                <MVal t="2400" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234760 0.008087 12.035400 " />
+                <MVal t="2560" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234760 0.008148 12.035404 " />
+                <MVal t="2720" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234764 0.008118 12.035400 " />
+                <MVal t="2880" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234756 0.008118 12.035400 " />
+                <MVal t="3040" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342043 57.234760 0.008118 12.035400 " />
+                <MVal t="3200" v="0.341910 0.014348 -0.939623 -0.012525 0.999864 0.010711 0.939649 0.008107 0.342044 57.234760 0.008118 12.035400 " />
+            </Samples>
+        </Controller>
+        <Controller name="Bone011(mirrored) \ Transform \ Position" classOf="Position XYZ" classID="118F7E02,FFEE238A" superClassID="900B" subNum="0" numChildren="3" filterType="pos" outOfRangeBefore="constant" outOfRangeAfter="constant">
+            <Samples count="21">
+                <P3Val t="0" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="160" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="320" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="480" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="640" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="800" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="960" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="1120" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="1280" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="1440" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="1600" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="1760" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="1920" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="2080" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="2240" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="2400" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="2560" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="2720" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="2880" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="3040" v="57.234764 0.008114 12.035400 " />
+                <P3Val t="3200" v="57.234764 0.008114 12.035400 " />
+            </Samples>
+        </Controller>
+        <Controller name="Bone011(mirrored) \ Transform \ Position \ X Position" classOf="Bezier Float" classID="2007,0" superClassID="9003" subNum="0" numChildren="0" filterType="posx" outOfRangeBefore="constant" outOfRangeAfter="constant">
+            <Keys count="2" inRangeLoop="false" outRangeLoop="false">
+                <Key t="2400" xB="false" yB="false" zB="false" wB="false" cVel="false" unconHan="false" inTan="flat" outTan="flat" v="57.234764 " inTanVal="0.0 " outTanVal="0.0 " inLen="-1.000000 " outLen="0.333300 " />
+                <Key t="3200" xB="false" yB="false" zB="false" wB="false" cVel="false" unconHan="false" inTan="flat" outTan="flat" v="57.234764 " inTanVal="0.0 " outTanVal="0.0 " inLen="0.333300 " outLen="-1.000000 " />
+            </Keys>
+        </Controller>
+        <Controller name="Bone011(mirrored) \ Transform \ Position \ Y Position" classOf="Bezier Float" classID="2007,0" superClassID="9003" subNum="1" numChildren="0" filterType="posy" outOfRangeBefore="constant" outOfRangeAfter="constant">
+            <Keys count="2" inRangeLoop="false" outRangeLoop="false">
+                <Key t="2400" xB="false" yB="false" zB="false" wB="false" cVel="false" unconHan="false" inTan="flat" outTan="flat" v="0.008114 " inTanVal="0.0 " outTanVal="0.0 " inLen="-1.000000 " outLen="0.333300 " />
+                <Key t="3200" xB="false" yB="false" zB="false" wB="false" cVel="false" unconHan="false" inTan="flat" outTan="flat" v="0.008114 " inTanVal="0.0 " outTanVal="0.0 " inLen="0.333300 " outLen="-1.000000 " />
+            </Keys>
+        </Controller>
+        <Controller name="Bone011(mirrored) \ Transform \ Position \ Z Position" classOf="Bezier Float" classID="2007,0" superClassID="9003" subNum="2" numChildren="0" filterType="posz" outOfRangeBefore="constant" outOfRangeAfter="constant">
+            <Keys count="2" inRangeLoop="false" outRangeLoop="false">
+                <Key t="2400" xB="false" yB="false" zB="false" wB="false" cVel="false" unconHan="false" inTan="flat" outTan="flat" v="12.035400 " inTanVal="0.0 " outTanVal="0.0 " inLen="-1.000000 " outLen="0.333300 " />
+                <Key t="3200" xB="false" yB="false" zB="false" wB="false" cVel="false" unconHan="false" inTan="flat" outTan="flat" v="12.035400 " inTanVal="0.0 " outTanVal="0.0 " inLen="0.333300 " outLen="-1.000000 " />
+            </Keys>
+        </Controller>
+        <Controller name="Bone011(mirrored) \ Transform \ Rotation" classOf="Euler XYZ" classID="2012,0" superClassID="900C" subNum="1" numChildren="3" filterType="rot" outOfRangeBefore="constant" outOfRangeAfter="constant" eulerOrder="XZY" eulerRotatingFrame="true">
+            <Samples count="21">
+                <RVal t="0" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="160" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="320" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="480" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="640" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="800" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="960" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="1120" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="1280" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="1440" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="1600" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="1760" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="1920" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="2080" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="2240" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="2400" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="2560" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="2720" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="2880" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="3040" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+                <RVal t="3200" v="-0.000795 -0.573566 -0.008202 0.819118 " />
+            </Samples>
+        </Controller>
+        <Controller name="Bone011(mirrored) \ Transform \ Rotation \ X Rotation" classOf="Bezier Float" classID="2007,0" superClassID="9003" subNum="0" numChildren="0" filterType="rotx" outOfRangeBefore="constant" outOfRangeAfter="constant">
+            <Keys count="2" inRangeLoop="false" outRangeLoop="false">
+                <Key t="2400" xB="false" yB="false" zB="false" wB="false" cVel="false" unconHan="false" inTan="flat" outTan="flat" v="0.031303 " inTanVal="0.0 " outTanVal="0.0 " inLen="-1.000000 " outLen="0.333300 " />
+                <Key t="3200" xB="false" yB="false" zB="false" wB="false" cVel="false" unconHan="false" inTan="flat" outTan="flat" v="0.031303 " inTanVal="0.0 " outTanVal="0.0 " inLen="0.333300 " outLen="-1.000000 " />
+            </Keys>
+        </Controller>
+        <Controller name="Bone011(mirrored) \ Transform \ Rotation \ Y Rotation" classOf="Bezier Float" classID="2007,0" superClassID="9003" subNum="1" numChildren="0" filterType="roty" outOfRangeBefore="constant" outOfRangeAfter="constant">
+            <Keys count="2" inRangeLoop="false" outRangeLoop="false">
+                <Key t="2400" xB="false" yB="false" zB="false" wB="false" cVel="false" unconHan="false" inTan="flat" outTan="flat" v="1.221527 " inTanVal="0.0 " outTanVal="0.0 " inLen="-1.000000 " outLen="0.333300 " />
+                <Key t="3200" xB="false" yB="false" zB="false" wB="false" cVel="false" unconHan="false" inTan="flat" outTan="flat" v="1.221527 " inTanVal="0.0 " outTanVal="0.0 " inLen="0.333300 " outLen="-1.000000 " />
+            </Keys>
+        </Controller>
+        <Controller name="Bone011(mirrored) \ Transform \ Rotation \ Z Rotation" classOf="Bezier Float" classID="2007,0" superClassID="9003" subNum="2" numChildren="0" filterType="rotz" outOfRangeBefore="constant" outOfRangeAfter="constant">
+            <Keys count="2" inRangeLoop="false" outRangeLoop="false">
+                <Key t="2400" xB="false" yB="false" zB="false" wB="false" cVel="false" unconHan="false" inTan="flat" outTan="flat" v="0.041940 " inTanVal="0.0 " outTanVal="0.0 " inLen="-1.000000 " outLen="0.333300 " />
+                <Key t="3200" xB="false" yB="false" zB="false" wB="false" cVel="false" unconHan="false" inTan="flat" outTan="flat" v="0.041940 " inTanVal="0.0 " outTanVal="0.0 " inLen="0.333300 " outLen="-1.000000 " />
+            </Keys>
+        </Controller>
+        <Controller name="Bone011(mirrored) \ Transform \ Scale" classOf="Bezier Scale" classID="2010,0" superClassID="900D" subNum="2" numChildren="0" filterType="scale" outOfRangeBefore="constant" outOfRangeAfter="constant">
+            <Keys count="2" inRangeLoop="false" outRangeLoop="false">
+                <K t="2400" xB="false" yB="false" zB="false" wB="false" cVel="false" unconHan="false" inTan="flat" outTan="flat" v="1.0 1.0 1.0 0.005501 0.195246 -0.0 0.980739 " inTanVal="0.0 0.0 0.0 " outTanVal="0.0 0.0 0.0 " inLen="-1.000000 -1.000000 -1.000000 " outLen="0.333300 0.333300 0.333300 " />
+                <K t="3200" xB="false" yB="false" zB="false" wB="false" cVel="false" unconHan="false" inTan="flat" outTan="flat" v="1.0 1.0 1.0 0.0 0.0 0.0 1.0 " inTanVal="0.0 0.0 0.0 " outTanVal="0.0 0.0 0.0 " inLen="0.333300 0.333300 0.333300 " outLen="-1.000000 -1.000000 -1.000000 " />
+            </Keys>
+        </Controller>
+    </Node>
+</MaxAnimation>

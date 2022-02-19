@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour
     float jumpHeight = 8.0f;
     float sensitivity = 2.0f;
     float gravity = 20.0f;
-    float xlimit = 45.0f;
+    float xlimit = 25.0f;
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
     float rotationX = 0;
@@ -44,7 +44,7 @@ public class Movement : MonoBehaviour
         //Sets the value of "movementDirectionY" to whatever the y value of the player is
         float movementDirectionY = moveDirection.y;
         //Part one of moving. It multiplies the speed of X and Y with the Z and X value
-        moveDirection = (forward * curSpeedX) + (right * curSpeedY);
+        moveDirection = (-forward * curSpeedX) + (-right * curSpeedY);
 
         //If spacebar is pressed and the character is on the ground
         if (Input.GetKeyDown(KeyCode.Space) && characterController.isGrounded)
@@ -77,8 +77,9 @@ public class Movement : MonoBehaviour
         //Moves our camera where our mouse goes
         rotationX += -Input.GetAxis("Mouse Y") * sensitivity;
         rotationX = Mathf.Clamp(rotationX, -xlimit, xlimit);
-        playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
+        playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 180, 0);
         transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * sensitivity, 0);
+
     }
 }
 
