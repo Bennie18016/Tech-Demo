@@ -9,6 +9,9 @@ public class Human : MonoBehaviour
     public float speed;
     GameObject roundstats;
     RoundManager rm;
+    GameObject entitymanager;
+    Human hu;
+    Player pl;
 
     private void Start()
     {
@@ -17,14 +20,20 @@ public class Human : MonoBehaviour
         speed = 4f;
         roundstats = GameObject.Find("RoundStats");
         rm = roundstats.GetComponent<RoundManager>();
+        entitymanager = GameObject.Find("EntityManager");
+        hu = entitymanager.GetComponent<Human>();
+        pl = entitymanager.GetComponent<Player>();
+
+        health = hu.health;
     }
 
     private void Update()
     {
         if(health <= 0)
         {
-            Destroy(gameObject);
+            pl.points += 300;
 
+            Destroy(gameObject);
             rm.EnemyCount--;
         }
     }

@@ -26,4 +26,6 @@ public class Ent_Behaviour : MonoBehaviour
 
     }
 
+    
+
 }

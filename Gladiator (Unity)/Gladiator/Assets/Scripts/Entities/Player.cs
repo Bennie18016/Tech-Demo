@@ -5,37 +5,44 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public float maxHP;
     public float health;
     public int strength;
     public int stamina;
+    public int points;
     bool isAttacking;
     Human hu;
 
     private void Start()
     {
+        maxHP = 100f;
         health = 100f;
         strength = 150;
         stamina = 100;
+        points = 0;
     }
 
     private void Update()
     {
         isAttacking = Input.GetMouseButtonDown(0);
+
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
 
-
-        if (other.tag == "Enemy")
-        {
-            hu = other.GetComponent<Human>();
-            Debug.Log("Test");
-            Debug.Log(hu.health);
-            hu.health -= strength;
-        }
-
+    if (other.tag == "Enemy")
+    {
+            if (Input.GetMouseButtonDown(0))
+            {
+                hu = other.GetComponent<Human>();
+                hu.health -= strength;
+            }
     }
 
 
-
+    }
 }
