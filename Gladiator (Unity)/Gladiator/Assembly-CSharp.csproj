@@ -53,14 +53,16 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\scr_GUI.cs" />
+    <Compile Include="Assets\Scripts\UI\scr_GUI.cs" />
+    <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
     <Compile Include="Assets\Scripts\Entities\Ent_Behaviour.cs" />
     <Compile Include="Assets\Scripts\RoundManager.cs" />
-    <Compile Include="Assets\Scripts\Animations.cs" />
-    <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scripts\MenuOptions.cs" />
+    <Compile Include="Assets\Scripts\Entities\Animations.cs" />
+    <Compile Include="Assets\Scripts\Entities\Movement.cs" />
     <Compile Include="Assets\Scripts\Entities\Human.cs" />
     <Compile Include="Assets\Scripts\Entities\Player.cs" />
-    <Compile Include="Assets\Scripts\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\DeadMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
