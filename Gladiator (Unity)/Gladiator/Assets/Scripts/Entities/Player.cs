@@ -12,7 +12,9 @@ public class Player : MonoBehaviour
     public int stamina;
     public int points;
     public int kills;
+    public int modifier;
     bool healing;
+    public bool canMove;
     Human hu;
     GameObject em;
     GameObject rm;
@@ -25,9 +27,12 @@ public class Player : MonoBehaviour
         stamina = 100;
         points = 0;
         kills = 0;
+        modifier = 0;
 
         em = GameObject.Find("EntityManager");
         rm = GameObject.Find("RoundStats");
+
+        canMove = true;
 
     }
 
@@ -63,10 +68,9 @@ public class Player : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 hu = other.GetComponent<Human>();
-                hu.health -= strength;
+                hu.health -= strength + modifier;
             }
         }
-
 
     }
 

@@ -22,7 +22,7 @@ public class DeadMenu : MonoBehaviour
         e = em.GetComponent<Player>();
         r = rm.GetComponent<RoundManager>();
 
-        var prefabText = Resources.Load("UI/TextRound");
+        var prefabText = Resources.Load("UI/Text");
 
         GameObject KillsObj = (GameObject)Instantiate(prefabText, new Vector3(0, 0, 0), Quaternion.identity);
         GameObject PointsObj = (GameObject)Instantiate(prefabText, new Vector3(0, 0, 0), Quaternion.identity);

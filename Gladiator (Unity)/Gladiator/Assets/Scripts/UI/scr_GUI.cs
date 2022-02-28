@@ -21,7 +21,7 @@ public class scr_GUI : MonoBehaviour
         en = entitymanager.GetComponent<Player>();
 
 
-        var prefabText = Resources.Load("UI/Textround");
+        var prefabText = Resources.Load("UI/Text");
         var prefabImage = Resources.Load("UI/Image");
 
         GameObject RoundObj = (GameObject)Instantiate(prefabText, new Vector3(0, 0, 0), Quaternion.identity);
@@ -46,6 +46,7 @@ public class scr_GUI : MonoBehaviour
 
 
         Count_Trans.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 250f);
+
     }
 
     private void Update()

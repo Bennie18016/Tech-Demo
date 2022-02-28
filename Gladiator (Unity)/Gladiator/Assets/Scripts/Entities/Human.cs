@@ -17,6 +17,7 @@ public class Human : MonoBehaviour
     Animator animator;
     bool inside;
     bool akcool;
+    public bool paused;
 
     private void Start()
     {

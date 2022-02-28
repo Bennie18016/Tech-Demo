@@ -18,6 +18,9 @@ public class Movement : MonoBehaviour
     Vector3 moveDirection = Vector3.zero;
     float rotationX = 0;
 
+    GameObject em;
+    Player pl;
+
     void Start()
     {
         //Lets me use the character controller in the code
@@ -26,6 +29,10 @@ public class Movement : MonoBehaviour
         //Hides the cursor and locks it so it doesn't move from the middle of the screen
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        //Gets the GameObject "Entity Manager" and the component of that GameObject "Player" (A script)
+        em = GameObject.Find("EntityManager");
+        pl = em.GetComponent<Player>();
     }
 
     void Update()
@@ -37,7 +44,7 @@ public class Movement : MonoBehaviour
         //Hold LShift to sprint
         bool running = Input.GetKey(KeyCode.LeftShift);
 
-        //Creates the speed that we move at. The ? will pick the output depending on if the boolean is true or false. The first value (in this case "sprint" would output if it is true and "speed" will output if it is false
+        //Creates the speed that we move at. The ? will pick the output depending on if the boolean is true or false. The first value "sprint" would output if it is true and "speed" will output if it is false
         float curSpeedX = (running ? sprint : speed) * Input.GetAxis("Vertical");
         float curSpeedY = (running ? sprint : speed) * Input.GetAxis("Horizontal");
 
@@ -71,15 +78,23 @@ public class Movement : MonoBehaviour
              */
         }
 
-        //Actually moves us
-        characterController.Move(moveDirection * Time.deltaTime);
+        //Allows us to restrict movement while in menus.
+        if(pl.canMove == true)
+        {
+            //Actually moves us
+            characterController.Move(moveDirection * Time.deltaTime);
 
-        //Moves our camera where our mouse goes
-        rotationX += -Input.GetAxis("Mouse Y") * sensitivity;
-        rotationX = Mathf.Clamp(rotationX, -xlimit, xlimit);
-        playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 180, 0);
-        transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * sensitivity, 0);
-
+            //Moves our camera where our mouse goes
+            rotationX += -Input.GetAxis("Mouse Y") * sensitivity;
+            //Clamps it so our camera cant move past a certain spot in this case 25 and -25
+            rotationX = Mathf.Clamp(rotationX, -xlimit, xlimit);
+            playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 180, 0);
+            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * sensitivity, 0);
+        } else
+        {
+            //Keeps our original position so we can get pushed or fall through the ground
+            gameObject.transform.position = new Vector3(transform.position.x, 1.663347f, transform.position.z);
+        }
     }
 }
 

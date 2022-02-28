@@ -23,6 +23,11 @@ public class Ent_Behaviour : MonoBehaviour
     private void Update()
     {
         Enemy.SetDestination(Player.transform.position);
+
+        if(hu.paused == true)
+        {
+            Enemy.SetDestination(gameObject.transform.position);
+        }
     }
 
 
