@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour
 {
     //Creating important variables. Serialize field lets private values be shown in the inspector
     float speed = 5f;
-    [SerializeField] private Camera playerCamera;
+    public Camera playerCamera;
     float sprint = 10f;
     float jumpHeight = 8.0f;
     float sensitivity = 2.0f;

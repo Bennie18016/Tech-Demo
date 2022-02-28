@@ -43,6 +43,7 @@ public class Human : MonoBehaviour
         if(health <= 0)
         {
             em_pl.points += 300;
+            em_pl.totscore += 300;
             em_pl.kills++;
 
             Destroy(gameObject);

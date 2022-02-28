@@ -13,9 +13,13 @@ public class Player : MonoBehaviour
     public int points;
     public int kills;
     public int modifier;
+    public int hpotions;
+    public int deaths;
+    public int totscore;
     bool healing;
     public bool canMove;
     Human hu;
+    Player pl;
     GameObject em;
     GameObject rm;
 
@@ -28,9 +32,11 @@ public class Player : MonoBehaviour
         points = 0;
         kills = 0;
         modifier = 0;
+        hpotions = 0;
 
         em = GameObject.Find("EntityManager");
         rm = GameObject.Find("RoundStats");
+        pl = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 
         canMove = true;
 
@@ -42,6 +48,8 @@ public class Player : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+            deaths++;
+            SaveLoad.SaveGame();
             SceneManager.LoadScene("Dead");
             DontDestroyOnLoad(em);
             DontDestroyOnLoad(rm);
@@ -59,6 +67,12 @@ public class Player : MonoBehaviour
                 StartCoroutine(heal());
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            useHeal();
+        }
+
     }
     private void OnTriggerStay(Collider other)
     {
@@ -86,5 +100,14 @@ public class Player : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         healing = false;
+    }
+
+    void useHeal()
+    {
+        if (hpotions > 1)
+        {
+            hpotions--;
+            pl.health += 50;
+        }
     }
 }

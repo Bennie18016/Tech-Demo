@@ -66,6 +66,8 @@ public class scr_Shop : MonoBehaviour
         but_txt.text = "Close";
 
         CreateShop(Items.Item.Mace, "Mace", Items.GetCost(Items.Item.Mace), 0);
+        CreateShop(Items.Item.HealthPotion, "Health\nPotion", Items.GetCost(Items.Item.HealthPotion), 1);
+        CreateShop(Items.Item.Sword, "Sword", Items.GetCost(Items.Item.Sword), 2);
     }
     private void Start()
     {
@@ -142,6 +144,8 @@ public class scr_Shop : MonoBehaviour
         switch (item)
         {
             case Items.Item.Mace: BuyMace(); break;
+            case Items.Item.HealthPotion: BuyHealthPotion(); break;
+            case Items.Item.Sword: BuySword(); break;
         }
     }
 
@@ -155,9 +159,20 @@ public class scr_Shop : MonoBehaviour
         Cursor.visible = false;
     }
 
-    public void BuyMace()
+    void BuyMace()
     {
-        pl.modifier = 150;
+        pl.modifier = 850;
+    }
+
+
+    void BuyHealthPotion()
+    {
+        pl.hpotions++;
+    }
+
+    void BuySword()
+    {
+        pl.modifier = 1350;
     }
 
 }
