@@ -16,9 +16,6 @@ public class scr_Shop : MonoBehaviour
     Transform c;
     GameObject HB;
 
-    GameObject shopUI;
-    Image shopI;
-    Text shopT;
     GameObject shopO;
 
 

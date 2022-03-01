@@ -47,12 +47,10 @@ public class Player : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
             deaths++;
-            SaveLoad.SaveGame();
-            SceneManager.LoadScene("Dead");
             DontDestroyOnLoad(em);
             DontDestroyOnLoad(rm);
+            SceneManager.LoadScene("Dead");
         }
 
         if (health > maxHP)
