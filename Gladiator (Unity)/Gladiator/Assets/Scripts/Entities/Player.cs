@@ -62,7 +62,10 @@ public class Player : MonoBehaviour
         {
             if(healing == false)
             {
+                if(canMove == true)
+                {
                 StartCoroutine(heal());
+                }
             }
         }
 
