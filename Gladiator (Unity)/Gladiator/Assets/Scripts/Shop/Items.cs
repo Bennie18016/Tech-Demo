@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Items : MonoBehaviour
+public class Items
 {
     public enum Item
     {
@@ -21,5 +21,6 @@ public class Items : MonoBehaviour
             case Item.HealthPotion: return 5000;    
         }
     }
-
 }
+
+
