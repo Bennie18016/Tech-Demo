@@ -16,6 +16,7 @@ public class scr_GUI : MonoBehaviour
 
     private void Start()
     {
+        //Transforming and Spawning the text
         roundstats = GameObject.Find("RoundStats");
         rm = roundstats.GetComponent<RoundManager>();
         entitymanager = GameObject.Find("EntityManager");
@@ -57,8 +58,10 @@ public class scr_GUI : MonoBehaviour
 
     private void Update()
     {
+        //Keeps each text updated to what we need
         CountText.text = "Enemies Left: " + rm.EnemyCount;
         RoundText.text = "Round: " + rm.Round;
+        //ToString turns a number value to a string so that it can be written
         PointText.text = en.points.ToString();
         PotionText.text = "Health Potions: " + en.hpotions;
     }

@@ -12,6 +12,9 @@ public class scr_Pause : MonoBehaviour
 
     private void Start()
     {
+
+        //Creating and transforming the ui. Also adds listeners to buttons so that they have functions
+
         em = GameObject.Find("EntityManager");
         var prefabButton = Resources.Load("UI/Button");
 
@@ -39,12 +42,14 @@ public class scr_Pause : MonoBehaviour
         menu.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 200);
         menu.onClick.AddListener(MainMenu);
 
-
+        //Starts the ui hidden
         ui.SetActive(false);
     }
 
     private void Update()
     {
+
+        //If the player clicks "esc" then they cant move, the enemies are frozen and shows the ui, the cursor and unlocks is
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             em.GetComponent<Player>().canMove = false;
@@ -55,6 +60,7 @@ public class scr_Pause : MonoBehaviour
         }
     }
 
+    //If a button is pressed, unfreezes everyone, hides ui and locks and hides cursor back
     public void Resume()
     {
         em.GetComponent<Player>().canMove = true;
@@ -64,6 +70,7 @@ public class scr_Pause : MonoBehaviour
         Cursor.visible = false;
     }
 
+    //If a button is pressed, loads the scene "MainMenu", basically quitting the game.
     public void MainMenu()
     {
         SceneManager.LoadScene("Main Menu");

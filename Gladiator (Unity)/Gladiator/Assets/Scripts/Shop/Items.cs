@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Items
 {
+    //Creates an enumerator so that I can set the names of items for sale
     public enum Item
     {
         Mace,
@@ -11,6 +12,7 @@ public class Items
         HealthPotion
     }
 
+    //Gets the cost of each item using switch. Returns an int
     public static int GetCost(Item item)
     {
         switch (item)

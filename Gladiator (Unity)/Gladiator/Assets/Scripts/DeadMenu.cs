@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class DeadMenu : MonoBehaviour
 {
+    //Setting up variables I need
 
     Text kills;
     Text points;
@@ -16,6 +17,7 @@ public class DeadMenu : MonoBehaviour
 
     private void Start()
     {
+        //Declaring variables and simply transforming them
         em = GameObject.Find("EntityManager");
         rm = GameObject.Find("RoundStats");
 
@@ -55,18 +57,22 @@ public class DeadMenu : MonoBehaviour
         Points_Trans.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 60f);
         Rounds_Trans.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 60f);
 
-
+        //Changing the text to say what I want
         kills.text = "Kills: " + e.kills;
         points.text = "Points: " + e.points;
         rounds.text = "Round: " + r.Round;
 
+        //Unlcoks and shows the cursor so they can click quit
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
     }
 
+    //Function menu
     public void menu()
     {
+        //Loads scene "Main Menu"
         SceneManager.LoadScene("Main Menu");
+        //Destroys the GameObject I dont need since new ones will be created if started again (EntityManager and RoundStats)
         Destroy(em);
         Destroy(rm);
     }
