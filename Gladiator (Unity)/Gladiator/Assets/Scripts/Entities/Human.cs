@@ -35,7 +35,6 @@ public class Human : MonoBehaviour
 
         health = hu.health;
 
-
     }
 
     private void Update()

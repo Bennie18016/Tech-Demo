@@ -13,14 +13,14 @@ public class RoundManager : MonoBehaviour
     public int EnemyCount;
     public int[] PreRound12 = { 6, 8, 13, 18, 24, 27, 28, 28, 29, 33, 34 };
     int ran;
+    int ran2;
     public Vector3[] Spawn_Locations = new[] { new Vector3(25, 1.540848f, 5), new Vector3(0, 1.540848f, 5), new Vector3(18.28f, 1.540848f, 11.23f), new Vector3(5.83f, 1.540848f, 18.58f) };
 
     //When the script has loaded, runs the function "newRoundEnemy"
     private void Start()
     {
-        newRoundEnemy();
-
-
+        Round = 0;
+        newRoundIncrease(ref Round);
     }
 
     //Checks to see if there are 0 enemies left, if there is no, does function "newRoundEnemy"
@@ -28,16 +28,20 @@ public class RoundManager : MonoBehaviour
     {
         if(EnemyCount == 0)
         {
-            newRoundEnemy();
+            newRoundIncrease(ref Round);
         }
     }
 
+    //Increases the round number by 1
+    void newRoundIncrease(ref int round)
+    {
+        round++;
+        newRoundEnemy();
+    }
 
     //Private function that will return an int for how many enemies there are
     int newRoundEnemy()
     {
-        //Adds one to the round
-        Round++;
 
         //Checks to see if round is less than 12 because formula doesnt work pre round 12
         if (Round < 12)
@@ -72,9 +76,19 @@ public class RoundManager : MonoBehaviour
             Vector3 zomSpawn = Spawn_Locations[ran];
             //Instaniates the enemy at the random spawn
             GameObject HumanObj = (GameObject)Instantiate(prefabHuman, zomSpawn, Quaternion.identity);
-            //Adds the human script to the enemies
-            HumanObj.AddComponent<Human>();
 
+            //10% chance to get 0
+            ran2 = Random.Range(0, 10);
+
+            if(ran2 == 0)
+            {
+                //Adds slow human script
+                HumanObj.AddComponent<slow_Human>();
+            } else
+            {
+                //Adds the human script to the enemies
+                HumanObj.AddComponent<Human>();
+            }
 
         }
     }

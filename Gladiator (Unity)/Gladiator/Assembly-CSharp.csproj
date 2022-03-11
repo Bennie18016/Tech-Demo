@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Entities\Human.cs" />
     <Compile Include="Assets\Scripts\Entities\Player.cs" />
     <Compile Include="Assets\Scripts\DeadMenu.cs" />
+    <Compile Include="Assets\Scripts\Entities\slow_Human.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -6,11 +6,11 @@ using UnityEngine.AI;
 public class Ent_Behaviour : MonoBehaviour
 {
     GameObject Player;
-    NavMeshAgent Enemy;
+    public NavMeshAgent Enemy;
     GameObject entitymanager;
     Human hu;
 
-    private void Start()
+    private void Awake()
     {
         //Gets the script "Human"
         entitymanager = GameObject.Find("EntityManager");
