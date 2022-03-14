@@ -9,6 +9,8 @@ public class slow_Human : Human
     Ent_Behaviour enemy;
     Animator animator;
     Player pl;
+    Player em_pl;
+    RoundManager rm;
     bool inside;
     bool akcool;
     private void Start()
@@ -22,8 +24,25 @@ public class slow_Human : Human
         enemy = gameObject.GetComponent<Ent_Behaviour>();
         animator = gameObject.GetComponent<Animator>();
         pl = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        em_pl = GameObject.Find("EntityManager").GetComponent<Player>();
+        rm = GameObject.Find("RoundStats").GetComponent<RoundManager>();
 
         enemy.Enemy.speed = speed;
+    }
+
+    private void Update()
+    {
+        if (health <= 0)
+        {
+            em_pl.points += 300;
+            em_pl.totscore += 300;
+            em_pl.kills++;
+
+            Destroy(gameObject);
+            rm.EnemyCount--;
+
+            pl.health += 10;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
